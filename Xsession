@@ -1,6 +1,19 @@
 #!/bin/bash
+
+# Disable screen blanking
+
+xset s off
+xset -dpms
+xset s noblack
+
+printf "Waiting for network "
+while ! ping -c 1 -n -w 1 8.8.8.8 &> /dev/null
+do
+    printf "%c" "."
+done
+
 while :
 do
-	./browser.py
+	/opt/raspian-signage/browser.py
 done
 
