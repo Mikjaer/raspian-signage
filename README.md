@@ -4,8 +4,10 @@ dd bs=4M if=2019-04-08-raspbian-stretch.img of=/dev/sde conv=fsync
 ```
 When the command is done, run the sync command twice
 
-# sync
-# sync
+```bash
+sync
+sync
+```
 
 Insert the flash-card and boot the raspberry bi, log in with username: pi and password: raspberry
 
@@ -13,10 +15,10 @@ Setup the rasperry as you normally would. (Timezone, Network, password and so on
 
 If you need to rotate the screen you have to add "display_rotate=N" to /boot/config.txt where
 
-0: 0 degrees rotation
-1: is 90 degrees rotation
-2: is 180 degrees rotation
-3: is 270 degrees rotation
+* 0: 0 degrees rotation
+* 1: is 90 degrees rotation
+* 2: is 180 degrees rotation
+* 3: is 270 degrees rotation
 
 Reboot afterwards
 
