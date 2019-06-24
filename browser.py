@@ -10,6 +10,7 @@ window.set_size_request(1920,1080)
  
 browser = webkit.WebView()
 browser.open("http://dashboard.company.com");
+browser.set_zoom_level(1.0);
 window.add(browser);
  
 window.show_all()
